@@ -5,26 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do app</title>
     <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/src/js/controller.js"></script>
 
 </head>
 <body>
     <h1 class="heading">To Do App</h1>
     <div class="switch-tasks-container">
         <div class="switch-tasks">
-            <h2 class="task-type active">Ongoing</h2>
-            <h2 class="task-type">Completed</h2>
+            <h2 class="task-type ongoing active">Ongoing</h2>
+            <h2 class="task-type completed">Completed</h2>
         </div>
     </div>
     <div class="container">
-        <ol>
-            <li class="task-item">
-                <div class="item">
-                    <input type="checkbox" class="task-checkbox">
-                    <p class="task-text">Study 2 hours</p>
-                    <ion-icon name="trash-outline" class="trash-icon"></ion-icon>
-                </div>
-            </li>
-        </ol>
+        <ul class="task-list">
+        </ul>
 
         <div class="add-task-container">
             <div class="add-task">

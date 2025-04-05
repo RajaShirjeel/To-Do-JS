@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  margin-top: 10rem;
+  margin-left: 10rem;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 5rem;
+}
+
+.switch-tasks-container {
+  justify-content: center;
+  margin-top: 5rem;
+  display: flex;
+}
+
+.switch-tasks {
+  gap: 4rem;
+  display: flex;
+}
+
+.task-type {
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.active {
+  color: #999;
+}
+
+.task-item::marker {
+  font-size: 2.7rem;
+}
+
+.item {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.task-checkbox {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.task-text {
+  font-size: 2.7rem;
+}
+
+.trash-icon {
+  color: red;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+}
+
+.add-task-container {
+  justify-content: center;
+  margin-top: 16rem;
+  display: flex;
+}
+
+.add-task {
+  align-items: center;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.add-task--input {
+  width: 50rem;
+  height: 6rem;
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+.add-task-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: green;
+  border: none;
+  padding: 1.8rem 4rem;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */

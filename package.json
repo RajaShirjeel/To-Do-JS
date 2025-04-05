@@ -1,0 +1,14 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "-": "^0.0.1",
+    "parcel": "^2.13.3"
+  }
+}
