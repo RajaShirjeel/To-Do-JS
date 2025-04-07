@@ -24,6 +24,15 @@ class TaskView {
 
     addHandlerComplete(handler){
         this.__parentEl.addEventListener('change', (e) => {
+            if (e.target.classList.contains('completed')) return;
+            const taskId = e.target.closest('.task-item').dataset.id;
+            handler(taskId);
+        })
+    }
+
+    addHandlerRemoveComplete(handler){
+        this.__parentEl.addEventListener('change', (e) => {
+            if (!e.target.classList.contains('completed')) return;
             const taskId = e.target.closest('.task-item').dataset.id;
             handler(taskId);
         })
@@ -34,6 +43,8 @@ class TaskView {
             if (!this.__addTaskInput.value) return;
             handler(this.__addTaskInput);
             this.__addTaskInput.value = '';
+            this.__completedTasks.classList.remove('active');
+            this.__ongoingTasks.classList.add('active');
         })
     }
 
@@ -49,7 +60,7 @@ class TaskView {
             const markup = `
             <li class="task-item" data-id="${i}">
                 <div class="item">
-                    <input type="checkbox" class="task-checkbox">
+                    <input type="checkbox" class="task-checkbox ${obj.state === 'completed' ? 'completed': ''}" ${obj.state === 'completed' ? 'checked': ''}>
                     <p class="task-text">${obj.task}</p>
                     <ion-icon name="trash-outline" class="trash-icon"></ion-icon>
                 </div>

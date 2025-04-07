@@ -602,7 +602,8 @@ var _taskView = require("./TaskView");
 var _taskViewDefault = parcelHelpers.interopDefault(_taskView);
 const addTaskController = function(data) {
     const task = {
-        'task': data.value
+        'task': data.value,
+        'state': 'ongoing'
     };
     (0, _model.state).ongoingTasks.push(task);
     (0, _taskViewDefault.default).render((0, _model.state).ongoingTasks);
@@ -610,8 +611,16 @@ const addTaskController = function(data) {
 const markTaskCompleteController = function(taskId) {
     const comTask = (0, _model.state).ongoingTasks.at(taskId);
     (0, _model.state).ongoingTasks.splice(taskId, 1);
+    comTask.state = 'completed';
     (0, _model.state).completedTasks.push(comTask);
     (0, _taskViewDefault.default).render((0, _model.state).ongoingTasks);
+};
+const markTaskIncompleteController = function(taskId) {
+    const comTask = (0, _model.state).completedTasks.at(taskId);
+    (0, _model.state).completedTasks.splice(taskId, 1);
+    comTask.state = 'ongoing';
+    (0, _model.state).ongoingTasks.push(comTask);
+    (0, _taskViewDefault.default).render((0, _model.state).completedTasks);
 };
 const showCompletedTasksController = function() {
     (0, _taskViewDefault.default).render((0, _model.state).completedTasks);
@@ -624,6 +633,7 @@ const init = function() {
     (0, _taskViewDefault.default).addHandlerComplete(markTaskCompleteController);
     (0, _taskViewDefault.default).addHandlerShowCompleted(showCompletedTasksController);
     (0, _taskViewDefault.default).addHandlerShowOngoing(showOngoingTasksController);
+    (0, _taskViewDefault.default).addHandlerRemoveComplete(markTaskIncompleteController);
 };
 init();
 
@@ -691,6 +701,14 @@ class TaskView {
     }
     addHandlerComplete(handler) {
         this.__parentEl.addEventListener('change', (e)=>{
+            if (e.target.classList.contains('completed')) return;
+            const taskId = e.target.closest('.task-item').dataset.id;
+            handler(taskId);
+        });
+    }
+    addHandlerRemoveComplete(handler) {
+        this.__parentEl.addEventListener('change', (e)=>{
+            if (!e.target.classList.contains('completed')) return;
             const taskId = e.target.closest('.task-item').dataset.id;
             handler(taskId);
         });
@@ -700,6 +718,8 @@ class TaskView {
             if (!this.__addTaskInput.value) return;
             handler(this.__addTaskInput);
             this.__addTaskInput.value = '';
+            this.__completedTasks.classList.remove('active');
+            this.__ongoingTasks.classList.add('active');
         });
     }
     render(data) {
@@ -713,7 +733,7 @@ class TaskView {
             const markup = `
             <li class="task-item" data-id="${i}">
                 <div class="item">
-                    <input type="checkbox" class="task-checkbox">
+                    <input type="checkbox" class="task-checkbox ${obj.state === 'completed' ? 'completed' : ''}" ${obj.state === 'completed' ? 'checked' : ''}>
                     <p class="task-text">${obj.task}</p>
                     <ion-icon name="trash-outline" class="trash-icon"></ion-icon>
                 </div>

@@ -1,5 +1,5 @@
 4193
-47/media/sarjais/Sarjais/To Do/src/js/TaskView.js1743877685460098800 0
+47/media/sarjais/Sarjais/To Do/src/js/TaskView.js1744046159784492900 0
 32/media/sarjais/Sarjais/To Do/src1742216601631530200 1
 68/media/sarjais/Sarjais/To Do/node_modules/parent-module/package.json1742216726826973200 0
 64/media/sarjais/Sarjais/To Do/node_modules/parent-module/index.js1742216726832973300 0
@@ -2172,7 +2172,7 @@
 77/media/sarjais/Sarjais/To Do/node_modules/@parcel/utils/src/getModuleParts.js1742216726939976000 0
 81/media/sarjais/Sarjais/To Do/node_modules/caniuse-lite/data/features/gyroscope.js1742216727091979700 0
 119/media/sarjais/Sarjais/To Do/node_modules/@parcel/core/test/fixtures/plugins/node_modules/parcel-transformer-no-engines1742216727078979400 1
-55/media/sarjais/Sarjais/To Do/dist/index.e37f48ea.js.map1743877709479723700 0
+55/media/sarjais/Sarjais/To Do/dist/index.e37f48ea.js.map1744046159800493500 0
 92/media/sarjais/Sarjais/To Do/node_modules/@parcel/runtime-js/src/helpers/worker/js-loader.js1742216726969976700 0
 75/media/sarjais/Sarjais/To Do/node_modules/htmlparser2/lib/WritableStream.js1742216726912975300 0
 90/media/sarjais/Sarjais/To Do/node_modules/@swc/helpers/src/_object_destructuring_empty.mjs1742216727125980600 0
@@ -2546,7 +2546,7 @@
 79/media/sarjais/Sarjais/To Do/node_modules/caniuse-lite/data/features/outline.js1742216727131980700 0
 89/media/sarjais/Sarjais/To Do/node_modules/@parcel/core/test/fixtures/main-format-mismatch1742216727077979400 1
 80/media/sarjais/Sarjais/To Do/node_modules/@parcel/transformer-image/package.json1742216726893974800 0
-33/media/sarjais/Sarjais/To Do/dist1743877709479723700 1
+33/media/sarjais/Sarjais/To Do/dist1744046159800493500 1
 95/media/sarjais/Sarjais/To Do/node_modules/@parcel/runtime-js/lib/helpers/browser/html-loader.js1742216726941976000 0
 69/media/sarjais/Sarjais/To Do/node_modules/@parcel/transformer-svg/lib1742216726890974800 1
 74/media/sarjais/Sarjais/To Do/node_modules/@parcel/utils/src/escape-html.js1742216726925975600 0
@@ -3251,7 +3251,7 @@
 90/media/sarjais/Sarjais/To Do/node_modules/caniuse-lite/data/features/css-module-scripts.js1742216727051978800 0
 77/media/sarjais/Sarjais/To Do/node_modules/@swc/helpers/cjs/_object_spread.cjs1742216726987977200 0
 78/media/sarjais/Sarjais/To Do/node_modules/@swc/helpers/esm/_read_only_error.js1742216727036978400 0
-49/media/sarjais/Sarjais/To Do/src/js/controller.js1743877709464723400 0
+49/media/sarjais/Sarjais/To Do/src/js/controller.js1744045941196028000 0
 83/media/sarjais/Sarjais/To Do/node_modules/@parcel/transformer-posthtml/package.json1742216726878974500 0
 101/media/sarjais/Sarjais/To Do/node_modules/caniuse-lite/data/features/background-repeat-round-space.js1742216726991977300 0
 91/media/sarjais/Sarjais/To Do/node_modules/caniuse-lite/data/features/wasm-extended-const.js1742216727153981300 0
@@ -4038,7 +4038,7 @@
 67/media/sarjais/Sarjais/To Do/node_modules/@lezer/lr/dist/index.d.ts1742216726912975300 0
 84/media/sarjais/Sarjais/To Do/node_modules/@parcel/utils/test/input/config/config.cjs1742216726869974200 0
 76/media/sarjais/Sarjais/To Do/node_modules/caniuse-lite/data/features/flac.js1742216727085979600 0
-51/media/sarjais/Sarjais/To Do/dist/index.e37f48ea.js1743877709478723700 0
+51/media/sarjais/Sarjais/To Do/dist/index.e37f48ea.js1744046159799493500 0
 81/media/sarjais/Sarjais/To Do/node_modules/caniuse-lite/data/features/flow-root.js1742216727086979600 0
 99/media/sarjais/Sarjais/To Do/node_modules/@swc/helpers/src/_class_static_private_field_spec_set.mjs1742216727119980400 0
 95/media/sarjais/Sarjais/To Do/node_modules/caniuse-lite/data/features/focusin-focusout-events.js1742216727086979600 0
